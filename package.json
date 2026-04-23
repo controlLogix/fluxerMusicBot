@@ -1,0 +1,25 @@
+{
+  "name": "fluxer-music-bot",
+  "version": "1.0.0",
+  "description": "A music bot for Fluxer servers using LiveKit for voice",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "ws": "^8.16.0",
+    "livekit-server-sdk": "^2.9.1",
+    "livekit-client": "^2.9.0",
+    "@livekit/rtc-node": "^0.12.2",
+    "undici": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.10",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0"
+  }
+}
